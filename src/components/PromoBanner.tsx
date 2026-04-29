@@ -4,10 +4,10 @@ import { useEffect, useRef } from "react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const landmarks = [
-  { name: "Hussain Sagar", km: "KM 5" },
-  { name: "KBR Park", km: "KM 14" },
-  { name: "Cable Bridge", km: "KM 28" },
-  { name: "Gachibowli Stadium", km: "Finish" },
+  { name: "Hosur Lake", km: "KM 3" },
+  { name: "SIPCOT Gate", km: "KM 8" },
+  { name: "Chandrapura Dam", km: "KM 14" },
+  { name: "Athletic Stadium", km: "Finish" },
 ];
 
 export default function PromoBanner() {
@@ -48,10 +48,10 @@ export default function PromoBanner() {
             <span className={`inline-block text-xs font-bold uppercase tracking-[0.3em] text-primary ${visible ? "anim-fade-up" : "opacity-0"}`}>The Journey Begins</span>
             <h2 className={`mt-4 text-3xl sm:text-5xl lg:text-7xl font-black text-white leading-[0.9] ${visible ? "anim-fade-up delay-1" : "opacity-0"}`}>
               Journey to
-              <span className="gradient-text block mt-1 sm:mt-2"> Triumph</span>
+              <span className="text-primary block mt-1 sm:mt-2"> Triumph</span>
             </h2>
             <p className={`mt-4 sm:mt-6 text-sm sm:text-lg text-white/35 max-w-xl mx-auto font-light ${visible ? "anim-fade-up delay-2" : "opacity-0"}`}>
-              From the historic Charminar to the Durgam Cheruvu Cable Bridge — experience the city like never before under the midnight sky.
+              From the serene Hosur Lake to the Kelevarapalli Reservoir — run through Hosur&apos;s most scenic routes under the midnight sky.
             </p>
           </div>
 
@@ -78,7 +78,7 @@ export default function PromoBanner() {
 
           {/* CTA */}
           <div className={`mt-12 sm:mt-16 text-center ${visible ? "anim-fade-up delay-4" : "opacity-0"}`}>
-            <a href="#register" className="inline-flex items-center gap-2 rounded-xl bg-white/10 backdrop-blur-sm border border-white/10 px-8 py-3.5 text-sm font-bold text-white uppercase tracking-wider transition-all hover:bg-white/15 hover:border-white/20 hover:-translate-y-0.5">
+            <a href="#categories" className="inline-flex items-center gap-2 rounded-xl bg-white/10 backdrop-blur-sm border border-white/10 px-8 py-3.5 text-sm font-bold text-white uppercase tracking-wider transition-all hover:bg-white/15 hover:border-white/20 hover:-translate-y-0.5">
               View Full Route Map
               <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
             </a>

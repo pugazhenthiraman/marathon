@@ -1,31 +1,18 @@
 import PageHeader from "@/components/PageHeader";
-import Link from "next/link";
-
-const editions = [
-  { year: "2025", date: "August 23-24, 2025", runners: "28,300" },
-  { year: "2024", date: "August 24-25, 2024", runners: "25,500" },
-  { year: "2023", date: "August 26-27, 2023", runners: "23,000" },
-  { year: "2022", date: "August 27-28, 2022", runners: "20,000" },
-  { year: "2019", date: "August 24-25, 2019", runners: "18,500" },
-];
 
 export default function ResultsPage() {
   return (
     <>
-      <PageHeader title="Results" subtitle="Race results from past editions" />
-      <section className="py-16 sm:py-24 px-5 sm:px-8">
-        <div className="mx-auto max-w-4xl space-y-4">
-          {editions.map((e) => (
-            <div key={e.year} className="flex items-center justify-between rounded-2xl bg-white p-6 border border-gray-100 shadow-sm hover:shadow-md hover:border-primary/20 transition group">
-              <div>
-                <p className="text-2xl sm:text-3xl font-black text-accent">{e.year}</p>
-                <p className="text-xs text-muted mt-1">{e.date} • {e.runners} runners</p>
-              </div>
-              <Link href="#" className="rounded-lg bg-background border border-gray-200 px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-muted group-hover:border-primary group-hover:text-primary transition">
-                View Results
-              </Link>
-            </div>
-          ))}
+      <PageHeader title="Results" subtitle="Race results will be published here" />
+      <section className="py-16 sm:py-24 px-5 sm:px-8 bg-accent">
+        <div className="mx-auto max-w-4xl text-center py-12">
+          <div className="w-20 h-20 mx-auto rounded-full bg-white/5 border border-white/10 flex items-center justify-center mb-6">
+            <svg className="w-10 h-10 text-white/30" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          </div>
+          <h2 className="text-2xl font-black text-white">Coming Soon</h2>
+          <p className="mt-3 text-white/40 max-w-md mx-auto">
+            This is the inaugural edition of the Hosur Midnight Marathon. Race results will be updated here after the event on June 16, 2026.
+          </p>
         </div>
       </section>
     </>

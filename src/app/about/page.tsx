@@ -1,64 +1,46 @@
 import PageHeader from "@/components/PageHeader";
 
-const stats = [
-  { val: "1,250", label: "Participants in 2011" },
-  { val: "28,000+", label: "Participants in 2025" },
-  { val: "₹8,00,000+", label: "Funds Raised" },
-  { val: "50+", label: "Countries" },
-];
-
 export default function AboutPage() {
   return (
     <>
       <PageHeader title="About Us" subtitle="The story behind the Hosur Midnight Marathon" />
 
-      <section className="py-16 sm:py-24 px-5 sm:px-8">
+      <section className="py-16 sm:py-24 px-5 sm:px-8 bg-accent">
         <div className="mx-auto max-w-4xl">
-          <blockquote className="text-xl sm:text-2xl font-light italic text-muted text-center border-l-4 border-primary pl-6">
-            &ldquo;If you want to win, run 100 metres. If you want an experience, run a marathon.&rdquo;
+          <blockquote className="text-xl sm:text-2xl font-light italic text-white/50 text-center border-l-4 border-primary pl-6">
+            &ldquo;Run the Night, Light the Future&rdquo;
           </blockquote>
 
-          <div className="mt-12 space-y-6 text-base sm:text-lg text-muted leading-relaxed">
+          <div className="mt-12 space-y-6 text-base sm:text-lg text-white/50 leading-relaxed">
             <p>
-              Experience the thrill of running under the stars — the Hosur Midnight Marathon. Since its inception in 2011, the marathon has grown from a humble 1,250 participants to becoming one of the country&apos;s most iconic night running events.
+              The Hosur Midnight Marathon is a brand new night running experience launching in 2026. Organised by Elitzur Academy of Sports and co-organised by Rotary Club of Hosur Legends, this inaugural edition brings together runners of all levels to celebrate fitness, community, and the spirit of endurance.
             </p>
             <p>
-              The Hosur Midnight Marathon isn&apos;t purely a race — it&apos;s an emotion. Every year, on the last weekend of August, the whole city gets together, irrespective of age, race or religion. The goal is to make a winner out of everyone who arrives at the starting line, simply because they made a conscious decision to take a step towards a healthier lifestyle.
+              On June 16, 2026, the streets of Hosur come alive under the midnight sky. Whether you&apos;re a seasoned runner or taking your first steps, this marathon is for you.
             </p>
             <p>
-              The marathon also serves as a platform to reach out and support numerous causes by pledging runs, having raised over ₹8,00,000 in funds to uplift those in need.
+              Three categories — Half Marathon (21.1 KM), 10K Run, and 5K Run — ensure there&apos;s a challenge for everyone. All at a flat entry fee of ₹500.
             </p>
-          </div>
-
-          {/* Stats */}
-          <div className="mt-14 grid grid-cols-2 lg:grid-cols-4 gap-4">
-            {stats.map((s) => (
-              <div key={s.label} className="rounded-2xl bg-white p-6 text-center border border-gray-100 shadow-sm">
-                <p className="text-2xl sm:text-3xl font-black text-primary">{s.val}</p>
-                <p className="mt-1 text-xs text-muted">{s.label}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
 
-      {/* HRS Section */}
-      <section className="py-16 sm:py-24 px-5 sm:px-8 bg-white">
+      <section className="py-16 sm:py-24 px-5 sm:px-8 bg-accent/95">
         <div className="mx-auto max-w-4xl">
           <span className="text-xs font-bold uppercase tracking-[0.3em] text-primary">The Organisers</span>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-black text-accent">Hosur Midnight Marathon</h2>
+          <h2 className="mt-3 text-3xl sm:text-4xl font-black text-white">Elitzur Academy of Sports</h2>
           <div className="mt-4 section-line" />
-          <p className="mt-6 text-base sm:text-lg text-muted leading-relaxed">
-            Founded in May 2007, HRS is the first group in India to institutionalise running. This not-for-profit society helps people lead active lifestyles through a three-fold approach: Advocacy, Training &amp; Events.
+          <p className="mt-6 text-base sm:text-lg text-white/50 leading-relaxed">
+            Elitzur Academy of Sports is dedicated to promoting fitness and athletic excellence in and around Hosur. This marathon is our flagship event, designed to inspire a healthier, more active community.
           </p>
           <div className="mt-10 grid sm:grid-cols-2 gap-6">
-            <div className="rounded-2xl bg-background p-6 sm:p-8 border border-gray-100">
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-2">Our Mission</p>
-              <p className="text-sm text-muted">To promote running as the preferred form of exercise in and around the twin cities.</p>
+            <div className="rounded-2xl bg-white/5 p-6 sm:p-8 border border-white/10">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-2">Organised By</p>
+              <p className="text-sm text-white/50">Elitzur Academy of Sports</p>
             </div>
-            <div className="rounded-2xl bg-background p-6 sm:p-8 border border-gray-100">
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-2">Our Vision</p>
-              <p className="text-sm text-muted">To achieve a fit, athletic and active community, by reaching out to every corner of the city.</p>
+            <div className="rounded-2xl bg-white/5 p-6 sm:p-8 border border-white/10">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-2">Co-organised By</p>
+              <p className="text-sm text-white/50">Rotary Club of Hosur Legends</p>
             </div>
           </div>
         </div>

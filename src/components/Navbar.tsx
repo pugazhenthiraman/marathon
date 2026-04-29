@@ -5,7 +5,6 @@ import { useEffect, useState, useRef, useCallback } from "react";
 import { usePathname } from "next/navigation";
 
 const raceItems = [
-  { href: "/race-categories/marathon", label: "Marathon" },
   { href: "/race-categories/half-marathon", label: "Half Marathon" },
   { href: "/race-categories/10k-run", label: "10K Run" },
   { href: "/race-categories/5k-run", label: "5K Run" },
@@ -20,7 +19,7 @@ const runnersItems = [
 
 const experienceItems = [
   { href: "/about", label: "About Us" },
-  { href: "/hotel", label: "Accommodation" },
+  { href: "/cheers", label: "Cheer Zones" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -138,16 +137,16 @@ export default function Navbar() {
             ))}
 
             <Link
-              href="/contact"
+              href="/volunteers"
               className={`rounded-full px-4 py-2.5 text-sm font-extrabold transition-colors ${
-                pathname === "/contact" ? "text-primary" : "text-white/90 hover:bg-white/10 hover:text-white"
+                pathname === "/volunteers" ? "text-primary" : "text-white/90 hover:bg-white/10 hover:text-white"
               }`}
             >
               Volunteers
             </Link>
 
             <Link
-              href="/contact"
+              href="/register"
               className="ml-2 rounded-full bg-primary px-5 py-2.5 text-sm font-extrabold text-white hover:opacity-95 transition-opacity"
             >
               Register
@@ -219,19 +218,12 @@ export default function Navbar() {
                 </details>
               ))}
 
-              <Link
-                href="/about"
-                className="block px-4 py-3.5 rounded-xl font-extrabold text-slate-900 hover:bg-slate-100 transition-colors mb-1"
-                onClick={closeDrawer}
-              >
-                About Us
-              </Link>
-            </div>
+              </div>
 
             {/* Drawer footer */}
             <div className="px-4 py-5 border-t border-slate-200">
               <Link
-                href="/contact"
+                href="/register"
                 className="block w-full text-center rounded-full bg-primary py-3.5 text-sm font-extrabold text-white"
                 onClick={closeDrawer}
               >

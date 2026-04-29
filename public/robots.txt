@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://logesh-waran2003.github.io/marathon/sitemap.xml

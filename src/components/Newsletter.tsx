@@ -14,8 +14,8 @@ export default function Newsletter() {
   };
 
   return (
-    <section id="register" className="relative py-24 sm:py-32 lg:py-40 px-5 sm:px-8 overflow-hidden">
-      <div className="parallax-bg absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517931524326-bdd55a541177?w=1920&q=80')]" />
+    <section id="newsletter" className="relative py-24 sm:py-32 lg:py-40 px-5 sm:px-8 overflow-hidden">
+      <div className="parallax-bg absolute inset-0 bg-[url('https://images.unsplash.com/photo-1502904550040-7534597429ae?w=1920&q=80')]" />
       <div className="absolute inset-0 bg-gradient-to-br from-accent via-secondary/95 to-accent" />
       <div className="absolute inset-0 overlay-pattern" />
 
@@ -30,7 +30,7 @@ export default function Newsletter() {
             <span className={`text-xs font-bold uppercase tracking-[0.3em] text-primary ${visible ? "anim-fade-left" : "opacity-0"}`}>Stay Connected</span>
             <h2 className={`mt-3 text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight ${visible ? "anim-fade-left delay-1" : "opacity-0"}`}>
               Don&apos;t Miss<br />
-              <span className="gradient-text">The Starting Line</span>
+              <span className="text-primary">The Starting Line</span>
             </h2>
             <p className={`mt-4 text-sm sm:text-base text-white/40 leading-relaxed max-w-md ${visible ? "anim-fade-left delay-2" : "opacity-0"}`}>
               Get early registration access, training tips, route updates, and exclusive offers delivered straight to your inbox.

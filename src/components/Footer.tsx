@@ -6,18 +6,20 @@ const cols = [
     { label: "Race Weekend", href: "/race-weekend" },
     { label: "Prize Money", href: "/prize-money" },
     { label: "Results", href: "/results" },
+    { label: "Volunteers", href: "/volunteers" },
+    { label: "Cheer Zones", href: "/cheers" },
   ]},
   { title: "Categories", links: [
-    { label: "Marathon", href: "/race-categories/marathon" },
     { label: "Half Marathon", href: "/race-categories/half-marathon" },
     { label: "10KM Run", href: "/race-categories/10k-run" },
     { label: "5KM Run", href: "/race-categories/5k-run" },
   ]},
-  { title: "Resources", links: [
-    { label: "FAQs", href: "/faqs" },
-    { label: "Contact Us", href: "/contact" },
-    { label: "Philanthropy", href: "/philanthropy" },
-    { label: "Hotel Partners", href: "/hotel" },
+  { title: "Policies", links: [
+    { label: "Code of Conduct", href: "/code-of-conduct" },
+    { label: "Data Protection", href: "/data-protection-policy" },
+    { label: "Entry Denial & Refund", href: "/entry-denial-and-refund" },
+    { label: "Waiver & Disclaimer", href: "/waiver-disclaimer" },
+    { label: "Medical Advisory", href: "/medical-advisory" },
   ]},
 ];
 
@@ -36,7 +38,7 @@ export default function Footer() {
         <div className="mx-auto max-w-6xl text-center">
           <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.3em] text-white/25 mb-6">Supported By</p>
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
-            {["Govt. of Telangana", "GHMC", "Traffic Police", "Sports Authority"].map((s) => (
+            {["Govt. of Tamil Nadu", "Hosur Municipality", "Elitzur Academy of Sports", "Rotary Club of Hosur Legends"].map((s) => (
               <span key={s} className="rounded-full bg-white/[0.04] border border-white/[0.06] px-5 sm:px-6 py-2.5 text-[11px] sm:text-xs font-medium text-white/30 transition-all hover:text-white/50 hover:border-white/10 hover:bg-white/[0.06]">{s}</span>
             ))}
           </div>
@@ -52,7 +54,7 @@ export default function Footer() {
               <span className="text-xl sm:text-2xl font-black tracking-tight">HOSUR MIDNIGHT<span className="text-primary"> MARATHON</span></span>
             </Link>
             <p className="mt-3 text-sm text-white/25 leading-relaxed max-w-xs">
-              Organised by Hosur Midnight Marathon. Bringing runners together through the night since 2011.
+              Organised by Elitzur Academy of Sports. Co-organised by Rotary Club of Hosur Legends. Run the Night, Light the Future.
             </p>
 
             {/* Social icons */}
@@ -86,9 +88,9 @@ export default function Footer() {
         <div className="mx-auto max-w-6xl flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-white/15">
           <p>&copy; {new Date().getFullYear()} Hosur Midnight Marathon. All Rights Reserved.</p>
           <div className="flex gap-5">
-            <Link href="#" className="hover:text-white/30 transition-colors">Terms</Link>
-            <Link href="#" className="hover:text-white/30 transition-colors">Privacy</Link>
-            <Link href="#" className="hover:text-white/30 transition-colors">Refund Policy</Link>
+            <Link href="/entry-denial-and-refund" className="hover:text-white/30 transition-colors">Terms</Link>
+            <Link href="/data-protection-policy" className="hover:text-white/30 transition-colors">Privacy</Link>
+            <Link href="/entry-denial-and-refund" className="hover:text-white/30 transition-colors">Refund Policy</Link>
           </div>
         </div>
       </div>

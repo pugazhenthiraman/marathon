@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafafa;
-  --foreground: #0f172a;
+  --background: #0f172a;
+  --foreground: #f8fafc;
   --primary: #dc2626;
   --primary-dark: #b91c1c;
   --primary-light: #fecaca;
   --secondary: #1e293b;
   --accent: #0f172a;
   --gold: #d97706;
-  --surface: #ffffff;
-  --muted: #64748b;
+  --surface: #1e293b;
+  --muted: #94a3b8;
 }
 
 @theme inline {
@@ -196,5 +196,22 @@ body {
 @media (hover: none) {
   .flip-card:active .flip-card-inner {
     transform: rotateY(180deg);
+  }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .anim-fade-up, .anim-fade-left, .anim-fade-right, .anim-scale-up,
+  .anim-float, .anim-glow, .anim-slide-down {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .marquee-scroll, .marquee-scroll-reverse {
+    animation: none !important;
+  }
+  .section-line {
+    animation: none !important;
+    width: 80px !important;
   }
 }
